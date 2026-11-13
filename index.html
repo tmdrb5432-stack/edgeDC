@@ -681,7 +681,18 @@ body{background:radial-gradient(ellipse at 3% 15%,#fff0f7 0,transparent 32%),#f9
 </style><style>
 .tablewrap tbody tr.data td{padding:8px 10px;vertical-align:top}.tablewrap .cell-compact{height:70px;max-height:70px;overflow:hidden;position:relative;overflow-wrap:anywhere}.detail-trigger{display:block;max-width:100%;border:0;padding:0;background:transparent;color:#ae116d;font-weight:700;font-size:13px;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.detail-trigger:hover{text-decoration:underline;color:#e2007e}.tablewrap tbody tr.data td:nth-child(14){cursor:pointer}.tablewrap tbody tr.data td:nth-child(14) .cell-compact{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}.detail-dialog{width:min(720px,92vw);max-height:86vh;box-sizing:border-box;border:0;border-radius:16px;padding:0;box-shadow:0 24px 70px #42112f55;color:#293348}.detail-dialog::backdrop{background:#2d182bb8}.detail-header{position:sticky;top:0;z-index:1;display:flex;align-items:flex-start;justify-content:space-between;gap:20px;background:#fff5fa;border-bottom:1px solid #f1d6e4;padding:20px 24px}.detail-header h2{margin:0;color:#a80765;font-size:20px;overflow-wrap:anywhere}.detail-header p{margin:4px 0 0;font-size:13px;color:#6d7180}.detail-close{border:1px solid #edc9db;border-radius:8px;background:white;color:#9e075c;padding:7px 12px;cursor:pointer}.detail-content{padding:8px 24px 24px}.detail-section{padding:15px 0;border-bottom:1px solid #f0e6eb}.detail-section h3{font-size:14px;color:#bb096d;margin:0 0 10px}.detail-line{display:grid;grid-template-columns:115px minmax(0,1fr);gap:10px;margin:7px 0;line-height:1.6;font-size:13px}.detail-label{color:#737d8e;font-weight:600}.detail-value{white-space:pre-wrap;overflow-wrap:anywhere}.detail-value a{color:#b4086c}.detail-related{padding:8px 10px;background:#fff6fb;border-radius:8px;margin:7px 0;font-size:13px;line-height:1.6}.detail-empty{color:#9aa2ae}@media(max-width:520px){.detail-line{grid-template-columns:1fr;gap:2px}.detail-header,.detail-content{padding-left:16px;padding-right:16px}}
 </style><style>.detail-map{height:240px;width:100%;border:1px solid #ead2df;border-radius:10px;overflow:hidden;background:#f7f2f6;z-index:0}.detail-map-message{font-size:12px;color:#6d7788;line-height:1.6;margin:7px 0}.detail-map-link{font-size:12px;color:#b40067;font-weight:700}.detail-map-status{font-size:12px;color:#a34b62;margin:5px 0 0}.detail-map-status[hidden]{display:none}@media(max-width:520px){.detail-map{height:200px}}</style><style>.tablewrap th.edit-col-head,.tablewrap td.edit-col{width:64px;min-width:64px;text-align:center}.tablewrap td.edit-col .cell-compact{display:flex;align-items:center;justify-content:center}.tablewrap td.edit-col .edit-row{margin:0;white-space:nowrap}</style><style>
-  /* 사업명 열 너비 */
+/* 사업자명/역할 열 너비 */
+.tablewrap th:nth-child(2),
+.tablewrap td:nth-child(2) {
+  width: 160px;
+  max-width: 160px;
+}
+
+.tablewrap td:nth-child(2) .cell-compact {
+  width: 140px;
+  max-width: 140px;
+}
+	/* 사업명 열 너비 */
   .tablewrap th:nth-child(3),
   .tablewrap td:nth-child(3) {
     width: 160px;
